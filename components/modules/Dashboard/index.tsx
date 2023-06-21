@@ -2,10 +2,13 @@ import Image from "next/image";
 import React from "react";
 import { dummyActivitiesData, dummyServicesData, dummyVisaData } from "./dummy";
 import { ActivityCard, ServiceCard, VisaCard } from "@elements";
+import { useRouter } from "next/router";
 
 const Dashboard = () => {
+	const { push } = useRouter();
+
 	return (
-		<section className="flex flex-col gap-6">
+		<section className="flex flex-col gap-6 m-5 md:mx-10">
 			<section className="flex justify-between">
 				<section>
 					<p className="text-gray-600 md:text-xl">Hello,</p>
@@ -32,7 +35,15 @@ const Dashboard = () => {
 						{dummyVisaData.map((item) => {
 							return (
 								<section key={item.id_card}>
-									<VisaCard {...item} />
+									<VisaCard
+										{...item}
+										onClick={() =>
+											push({
+												pathname: "/account/finance",
+												query: { id_card: item.id_card },
+											})
+										}
+									/>
 								</section>
 							);
 						})}

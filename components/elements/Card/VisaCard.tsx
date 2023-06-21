@@ -6,10 +6,12 @@ const VisaCard: React.FC<VisaCardProps> = ({
 	isPremium,
 	id_card,
 	owner_name,
+	onClick,
 }) => {
 	return (
 		<section
-			className={`flex flex-col gap-5 p-5 rounded-xl font-medium w-[20rem] ${
+			onClick={onClick}
+			className={`flex flex-col gap-5 p-5 rounded-xl font-medium w-[20rem] cursor-pointer ${
 				isPremium
 					? "bg-gradient-to-bl from-cyan-400 via-sky-500 to-blue-600 text-white"
 					: "bg-white drop-shadow-lg text-gray-600"

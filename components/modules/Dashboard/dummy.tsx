@@ -41,7 +41,7 @@ export const dummyServicesData = [
 	},
 	{
 		name: "Help",
-		icon: <QuestionMarkIcon />,
+		icon: <QuestionMarkIcon fill="#2563eb" />,
 	},
 ];
 

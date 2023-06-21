@@ -11,3 +11,4 @@ export { default as DollarIcon } from "./DollarIcon";
 export { default as QuestionMarkIcon } from "./QuestionMarkIcon";
 export { default as TopUpIcon } from "./TopUpIcon";
 export { default as LocationIcon } from "./LocationIcon";
+export { default as LeftArrowIcon } from "./LeftArrowIcon";

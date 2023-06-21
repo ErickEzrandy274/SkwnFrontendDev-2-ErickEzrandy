@@ -4,6 +4,7 @@ export interface VisaCardProps {
 	isPremium: boolean;
 	id_card: string;
 	owner_name: string;
+	onClick: () => void;
 }
 
 export interface ServiceCardProps {

@@ -10,7 +10,7 @@ const Navbar = () => {
 			<HomeIcon isActive={pathname === "/"} />
 			<HistoryIcon isActive={pathname === "/history"} />
 			<ChatIcon isActive={pathname === "/chat"} />
-			<AccountIcon isActive={pathname === "/account"} />
+			<AccountIcon isActive={pathname.slice(1).includes("account")} />
 		</section>
 	);
 };

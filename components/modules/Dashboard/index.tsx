@@ -8,7 +8,7 @@ const Dashboard = () => {
 	const { push } = useRouter();
 
 	return (
-		<section className="flex flex-col gap-6 m-5 md:mx-10">
+		<section className="flex flex-col gap-6">
 			<section className="flex justify-between">
 				<section>
 					<p className="text-gray-600 md:text-xl">Hello,</p>
